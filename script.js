@@ -34,7 +34,7 @@ function generatePassword() {
   password = [];
   
 
-  if (passwordLength >= passwordCriteria.length -1) {
+  if (passwordLength > passwordCriteria.length) {
     //checks to see if password length is long enough for criteria
     if (passwordCriteria.includeSpecialCharacters) {
       possibleCharacters = possibleCharacters.concat(specialCharcters);
